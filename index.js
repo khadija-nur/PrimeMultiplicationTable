@@ -1,3 +1,5 @@
+const isPrime = require("./isPrime")
+
 const primesMultiplication = (n) => {
     if (typeof(n) !== "number"){
         return "Please insert a number"
@@ -11,11 +13,13 @@ const primesMultiplication = (n) => {
         return "Please insert a whole number";
     }
     let numbersArray = [];
-    for (i = 1; i <= n; i++ ) {
-        numbersArray.push(i)
+    for (i = 1; n > numbersArray.length; i++ ) {
+        if(isPrime(i)){
+            numbersArray.push(i)
+        }
     }
     console.log(numbersArray)
     return numbersArray;
 }
-console.log(primesMultiplication(1))
+console.log(primesMultiplication(5))
 module.exports = primesMultiplication;
