@@ -1,4 +1,6 @@
+
 const primesMultiplication = require('../index')
+const isPrime = require("../isPrime")
 
     test("only N amount of numbers should be generated", () => {
         expect(primesMultiplication(5).length).toBe(5);
@@ -9,7 +11,7 @@ const primesMultiplication = require('../index')
     });
 
     test("the numbers returned should be prime", () => {
-        expect(primesMultiplication(5)[0]).toBe(2);
+        expect(isPrime(primesMultiplication(5)[0])).toBe(true);
     });
 
 
