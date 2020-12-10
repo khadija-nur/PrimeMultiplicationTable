@@ -8,6 +8,8 @@ const primesMultiplication = require('../index')
         expect(primesMultiplication(5)[0]).toBe(2);
     });
 
-
+    test("the numbers returned should be prime", () => {
+        expect(primesMultiplication(5)[0]).toBe(2);
+    });
 
 
