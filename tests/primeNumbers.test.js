@@ -12,3 +12,8 @@ const primesMultiplication = require('../index')
     })
     
 
+
+    test("user input should be atleast 1", () => {
+        expect(primesMultiplication(-1).toBe("please insert a value of at least 1"))
+    })
+
