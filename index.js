@@ -10,8 +10,12 @@ const primesMultiplication = (n) => {
         console.log(n % 1)
         return "Please insert a whole number";
     }
-    return typeof(n);
-
+    let numbersArray = [];
+    for (i = 1; i <= n; i++ ) {
+        numbersArray.push(i)
+    }
+    console.log(numbersArray)
+    return numbersArray;
 }
 console.log(primesMultiplication(1))
 module.exports = primesMultiplication;
