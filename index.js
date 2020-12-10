@@ -6,6 +6,10 @@ const primesMultiplication = (n) => {
     if (n < 1){
         return "Please insert a value of at least 1"
     }
+    if (n % 1 != 0){
+        console.log(n % 1)
+        return "Please insert a whole number";
+    }
     return typeof(n);
 
 }
