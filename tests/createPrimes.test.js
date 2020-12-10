@@ -4,5 +4,10 @@ const primesMultiplication = require('../index')
         expect(primesMultiplication(5).length).toBe(5);
     });
 
+    test("the first number should be 2", () => {
+        expect(primesMultiplication(5)[0]).toBe(2);
+    });
+
+
 
 
