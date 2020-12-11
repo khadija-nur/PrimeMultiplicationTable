@@ -1,15 +1,18 @@
 module.exports = (primesArray) => {  
-    let topRowColumn = [ , ...primesArray];
-    let table = [topRowColumn];
+    let topRowColumn = [ ];
+    topRowColumn.push(" ", ...primesArray)
+    let table = [];
+    table.push(topRowColumn)
     primesArray.map((firstInColumn) => {
 
-      let column = [firstInColumn];
-      primesArray.map((firstInRow) => {
-        let row = firstInColumn * firstInRow;
-        column.push(row);
+        let column = [firstInColumn];
+        primesArray.map((firstInRow) => {
+          let row = firstInColumn * firstInRow;
+          column.push(row);
+        });
+        table.push(column);
       });
-      table.push(column);
-    });
+ 
     return table;
   };
   
