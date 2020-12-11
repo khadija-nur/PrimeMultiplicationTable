@@ -11,5 +11,5 @@ module.exports = (num) =>{
         console.log(num % 1)
         return "Please insert a whole number";
     }
-    return;
+    return "validation passed";
   }
