@@ -1,3 +1,4 @@
+const createMultiplicationTable = require('./helpers/createMultiplicationTable')
 const isPrime = require("./helpers/isPrime")
 const validateInput = require("./helpers/validateInput")
 const primesMultiplication = (n) => {
@@ -10,9 +11,13 @@ if(validateInput(n) != "validation passed") {
             numbersArray.push(i)
         }
     }
-    console.log(numbersArray)
-    return numbersArray;
+    return createMultiplicationTable(numbersArray);
 }
 
-console.log(primesMultiplication(5))
+
+
+
+
+console.log(primesMultiplication("hello"))
+console.log(primesMultiplication(3))
 module.exports = primesMultiplication;
