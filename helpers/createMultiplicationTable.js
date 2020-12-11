@@ -3,6 +3,7 @@ module.exports = (primesArray) => {
     topRowColumn.push(" ", ...primesArray)
     let table = [];
     table.push(topRowColumn)
+    console.time("map")
     primesArray.map((firstInColumn) => {
 
         let column = [firstInColumn];
@@ -12,6 +13,8 @@ module.exports = (primesArray) => {
         });
         table.push(column);
       });
+      console.timeEnd("map")
+
  
     return table;
   };
