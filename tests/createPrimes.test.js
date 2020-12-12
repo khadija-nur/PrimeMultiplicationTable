@@ -1,20 +1,19 @@
 
-const primesMultiplication = require('../index')
-const isPrime = require("../helpers/isPrime")
+const createPrimes = require("../helpers/createPrimes")
 
     test("only N amount of numbers should be generated", () => {
-        expect(primesMultiplication(5).length).toBe(5);
-        expect(primesMultiplication(11).length).toBe(24;
-        expect(primesMultiplication(24).length).toBe(11);
+        expect(createPrimes(5).length).toBe(5);
+        expect(createPrimes(11).length).toBe(11);
+        expect(createPrimes(24).length).toBe(24);
 
     });
 
     test("the first number should be 2", () => {
-        expect(primesMultiplication(5)[0]).toBe(2);
+        expect(createPrimes(5)[0]).toBe(2);
     });
 
     test("the first number returned in the array should be prime", () => {
-        expect(isPrime(primesMultiplication(5)[0])).toBe(true);
+        expect(createPrimes(1)).toStrictEqual([2]);
     });
 
 
