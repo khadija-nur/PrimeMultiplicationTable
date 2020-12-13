@@ -1,6 +1,7 @@
 
-module.exports = (num) =>{
+export default (num) =>{
     if (typeof(num) !== "number"){
+        console.log(typeof(num))
         return "Please insert a number"
     };
     

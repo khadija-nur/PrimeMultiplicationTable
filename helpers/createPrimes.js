@@ -1,4 +1,4 @@
-module.exports = (num) =>{
+export default (num) =>{
   console.log("number in creates prime", num);
   const isPrime = (num) => {
     for(let i = 2; i < num; i++)
@@ -6,7 +6,7 @@ module.exports = (num) =>{
     return num  > 1;
   }
   let primesArray = [];
-  for (i = 1; num > primesArray.length; i++ ) {
+  for (let i = 1; num > primesArray.length; i++ ) {
       if(isPrime(i)){
         
           primesArray.push(i)

@@ -1,4 +1,4 @@
-module.exports = (primesArray) => {  
+export default (primesArray) => {  
     let topRowColumn = [ ];
     topRowColumn.push(" ", ...primesArray)
     let table = [];
@@ -19,3 +19,4 @@ module.exports = (primesArray) => {
     return table;
   };
   
+
