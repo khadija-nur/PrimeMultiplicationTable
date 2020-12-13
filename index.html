@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type="module" src="./index.js"  defer></script>
-
-</head>
-<body>
-
-    <!-- 
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script type="module" src="./index.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- 
         - create form(legend) asking for number input
         - create empty section to add the multiplication table
         - 
@@ -20,17 +19,29 @@
 
 
      -->
-     <form>
-        <!-- <fieldset> -->
-            <!-- <legend>Generate a multiplication table of  prime numbers </legend> -->
-            <input type="number" id="input" placeholder="Enter a number">
-            <input type="submit" id="generateTable" value="Generate Table">
-        <!-- </fieldset> -->
-      </form>
+		<h1>Primes Multiplication Table</h1>
+		<form>
+			<fieldset>
+				<legend>Enter a number and generate your table</legend>
 
+				<input
+					type="number"
+					id="input"
+					min="1"
+					autofocus
+					class="user_input"
+					placeholder="Enter a number"
+					required
+				/>
+				<input
+					type="submit"
+					id="generateTable"
+					class="submit_btn"
+					value="Generate Table"
+				/>
+			</fieldset>
+		</form>
 
-      <main class="table_container">
-
-      </main>
-  </body>
+		<main class="table_container"></main>
+	</body>
 </html>
