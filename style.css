@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins&display=swap');
+body {
+	color: rgba(230, 114, 110);
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Poppins', sans-serif;
+	background-color: #242048;
+}
+h1 {
+	font-family: 'Concert One', cursive;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: rgba(230, 114, 110);
+}
+
+form {
+	margin: 0 auto;
+	width: 60vw;
+	height: 8rem;
+	border-radius: 20px;
+	left: 50%;
+	top: 50%;
+	margin-bottom: 2rem;
+}
+
+.user_input {
+	width: 50%;
+	height: 2.5rem;
+	margin: 0.2rem;
+	padding: 0.2rem 2rem;
+	box-shadow: inset 0px 1px 16px rgba(0, 0, 0, 0.345);
+}
+
+input {
+	font-weight: 700;
+	border-radius: 5px;
+}
+
+.submit_btn {
+	padding: 1rem 2rem;
+	background-color: rgba(124, 204, 179);
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.submit_btn:hover {
+	top: -2px;
+	box-shadow: 3px 3px 15px 0px rgba(201, 203, 235, 0.85);
+	background-color: rgba(52, 179, 143, 0.707);
+	color: white;
+}
+
+.submit_btn:active {
+	box-shadow: 0 0 #eec5c5;
+	top: 6px;
+}
+
+td {
+	color: rgb(226, 170, 25);
+	padding: 0.3rem;
+	font-weight: 700;
+}
+
+table {
+	color: rgb(37, 190, 144);
+}
+main {
+	margin: 0 auto;
+}
+table {
+	color: rgb(37, 190, 144);
+	overflow: hidden;
+	width: 50%;
+}
+
+table,
+th,
+td {
+	border: 1px solid #fff;
+
+	border-collapse: collapse;
+	padding: 15px;
+}
+th,
+td:hover {
+	box-shadow: 3px 3px 15px 0px rgba(201, 203, 235, 0.85);
+}
+
+td:hover::after,
+th:hover::after {
+	background-color: #363066;
+}
