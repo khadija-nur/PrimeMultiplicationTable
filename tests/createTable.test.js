@@ -1,8 +1,5 @@
 import createTable from '../helpers/createMultiplicationTable';
 
-// should be a number
-// should be at least 1
-// should be a whole number
 describe('confirm output type is accurate', () => {
 	test('Table should be an array', () => {
 		expect(typeof createTable([2, 3])).toBe('object');

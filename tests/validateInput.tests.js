@@ -1,7 +1,5 @@
 import primesMultiplication from './index';
-// should be a number
-// should be at least 1
-// should be a whole number
+
 describe('validate user input N', () => {
 	test('should be of type Number', () => {
 		expect(primesMultiplication('string')).toBe('Please insert a number');

@@ -1,21 +1,4 @@
-/*
-- create  a table
-use a function that create rows for the table :
--- should take in an array of arrays 
--- for each array creat a row and put the elements into the sections
--- give the rows ids
--- give each element class of element?
-
-
-
-
-
-
-
-*/
-
-export default (arrayStack) => {
-	// get the reference for the body
+const displayTable = (arrayStack) => {
 	var tblContainer = document.querySelector('main');
 
 	// creates a <table> element and a <tbody> element
@@ -36,17 +19,13 @@ export default (arrayStack) => {
 		});
 		tblBody.appendChild(tableRow);
 	});
-	// creates a table row
 
-	// add the row to the end of the table body
-
-	// put the <tbody> in the <table>
 	tbl.appendChild(tblBody);
-	// appends <table> into <body>
-	console.log(tbl);
-	console.log(tblContainer);
+	//  Clear the page so that there is only one table a given time
 	tblContainer.innerHTML = '';
 	tblContainer.appendChild(tbl);
 	// sets the border attribute of tbl to 2;
 	tbl.setAttribute('border', '2');
 };
+
+export default displayTable;
