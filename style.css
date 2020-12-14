@@ -30,6 +30,10 @@ input {
 	border-radius: 5px;
 }
 
+input {
+	font-weight: 700;
+	border-radius: 5px;
+}
 .user_input {
 	width: 50%;
 	height: 2.5rem;
