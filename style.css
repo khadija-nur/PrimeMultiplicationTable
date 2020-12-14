@@ -26,17 +26,16 @@ form {
 	margin-bottom: 2rem;
 }
 
+input {
+	font-weight: 700;
+	border-radius: 5px;
+}
 .user_input {
 	width: 50%;
 	height: 2.5rem;
 	margin: 0.2rem;
 	padding: 0.2rem 2rem;
 	box-shadow: inset 0px 1px 16px rgba(0, 0, 0, 0.345);
-}
-
-input {
-	font-weight: 700;
-	border-radius: 5px;
 }
 
 .submit_btn {
@@ -62,18 +61,6 @@ input {
 	top: 6px;
 }
 
-td {
-	color: rgb(226, 170, 25);
-	padding: 0.3rem;
-	font-weight: 700;
-}
-
-table {
-	color: rgb(37, 190, 144);
-}
-main {
-	margin: 0 auto;
-}
 table {
 	color: rgb(37, 190, 144);
 	overflow: hidden;
@@ -88,6 +75,13 @@ td {
 	border-collapse: collapse;
 	padding: 15px;
 }
+
+td {
+	color: rgb(226, 170, 25);
+	padding: 0.3rem;
+	font-weight: 700;
+}
+
 th,
 td:hover {
 	box-shadow: 3px 3px 15px 0px rgba(201, 203, 235, 0.85);
